@@ -1,2 +1,3 @@
-# Proyecto-final-deep-learning-
-Este es el repositorio del trabajo de David y Joel
+# Clasificación de baraja de cartas inglesa
+
+En este proyecto se propone desarrollar un sistema capaz de clasificar automáticamente una carta de una baraja inglesa a partir de una imagen de la misma. Es decir, dado un modelo de reconocimiento visual, el objetivo es identificar correctamente tanto el valor (As, 2, 3, ..., J, Q, K) como el palo (corazones, diamantes, tréboles o picas) de la carta mostrada en la fotografía. Este tipo de sistema puede resultar especialmente útil en entornos como competiciones de póker o casinos, donde es importante llevar un registro preciso y automatizado de las cartas que se juegan en cada partida.
