@@ -12,3 +12,13 @@ En la siguiente tabla se resumen los enfoques y resultados reportados por alguno
 | Otros usuarios     | Modelos preentrenados    | Transfer learning  (EffecientNetB3)       | Hasta 98 %         |
 
 Vamos a tratar de mejorar estas metricas tan altas usando tecnicas de machine learning modernas ya que la mayoria de estos resultados tienen ya un par de años.
+
+# Nuestros modelos
+
+En esta parte documentaremos las estadisticas de nuestros modelos.
+
+| Autor / Referencia | Modelo utilizado    | Estrategia                                | Accuracy reportada | Score  | Loss train | Loss valid | Loss test |
+| ------------------ | ------------------- | ----------------------------------------- | ------------------ | ------ | ---------- | ---------- | --------- |
+| Nosotros           | Regresión logística | Obtener vector de características con HOG | 69.43 %            | 0.7132 | 0.000952   | 1.5265     | 1.5265    |
+
+
