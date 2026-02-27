@@ -22,4 +22,9 @@ En esta parte documentaremos las estadisticas de nuestros modelos.
 | Nosotros           | Regresión logística | Obtener vector de características con HOG | 69.43 %            | 0.000952   | 1.5265     | 1.5265    |
 | Nosotros           | CNN                 | Crear una CNN más simple posible          | 2.6 %              | 0.016      | 3.305      | 3.393     |
 
+| Autor / Referencia | Modelo utilizado    | Estrategia                                | Nº parámetros | Accuracy reportada | Loss train | Loss valid | Loss test |
+| ------------------ | ------------------- | ----------------------------------------- | ------------- | ------------------ | ---------- | ---------- | --------- |
+| Nosotros           | Regresión logística | Obtener vector de características con HOG | ~ (d × c)     | 69.43 %            | 0.000952   | 1.5265     | 1.5265    |
+| Nosotros           | CNN simple          | Crear una CNN más simple posible          | (26,926,645) | 2.6 %              | 0.016      | 3.305      | 3.393     |
+| Nosotros           | RandomForestClassifier | Modelo simple de machine learning                   | Total leaves: 368901   | 58.11 %                |1.1745          | 2.5337         | 2.5451         |
 
