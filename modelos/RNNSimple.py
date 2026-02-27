@@ -1,10 +1,7 @@
 import tensorflow as tf
-from keras.utils import to_categorical
 from keras.models import Sequential
-from keras.layers import Dense, Conv2D, Flatten, BatchNormalization, Dropout, MaxPooling2D,GlobalAveragePooling2D
-from keras import regularizers
+from keras.layers import Dense, Conv2D, Flatten
 from keras.optimizers import Adam
-from keras.layers import ReLU
 
 def ModeloSimpleCLS(input_shape, num_clases):
     """
