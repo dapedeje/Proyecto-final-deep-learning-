@@ -12,7 +12,7 @@ def ModeloSimpleCLS(input_shape, num_clases):
     """
     model = Sequential()
     
-    model.add(Conv2D(32, kernel_size= 3, activation='relu', input_shape=(32,32,3)))
+    model.add(Conv2D(32, kernel_size= 3, activation='relu', input_shape=input_shape))
     model.add(Flatten())
     model.add(Dense(num_clases, activation='softmax'))
     
