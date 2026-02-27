@@ -17,8 +17,9 @@ Vamos a tratar de mejorar estas metricas tan altas usando tecnicas de machine le
 
 En esta parte documentaremos las estadisticas de nuestros modelos.
 
-| Autor / Referencia | Modelo utilizado    | Estrategia                                | Accuracy reportada | Score  | Loss train | Loss valid | Loss test |
-| ------------------ | ------------------- | ----------------------------------------- | ------------------ | ------ | ---------- | ---------- | --------- |
-| Nosotros           | Regresión logística | Obtener vector de características con HOG | 69.43 %            | 0.7132 | 0.000952   | 1.5265     | 1.5265    |
+| Autor / Referencia | Modelo utilizado    | Estrategia                                | Accuracy reportada | Loss train | Loss valid | Loss test |
+| ------------------ | ------------------- | ----------------------------------------- | ------------------ | ---------- | ---------- | --------- |
+| Nosotros           | Regresión logística | Obtener vector de características con HOG | 69.43 %            | 0.000952   | 1.5265     | 1.5265    |
+| Nosotros           | CNN                 | Crear una CNN más simple posible          | 2.6 %              | 0.016      | 3.305      | 3.393     |
 
 
