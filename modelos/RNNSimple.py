@@ -17,6 +17,6 @@ def ModeloSimpleCLS(input_shape, num_clases):
     model.add(Dense(num_clases, activation='softmax'))
     
     optimizer_adam = Adam()
-    model.compile(optimizer=optimizer_adam, loss='categorical_crossentropy', metrics=['categorical_accuracy'])
+    model.compile(optimizer=optimizer_adam, loss='sparse_categorical_crossentropy', metrics=['categorical_accuracy'])
     
     return model
