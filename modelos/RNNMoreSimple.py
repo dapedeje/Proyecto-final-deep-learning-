@@ -15,7 +15,10 @@ def ModeloSimpleCLS(input_shape, num_clases):
     model.add(Conv2D(num_clases, kernel_size= 3, activation='relu', input_shape=input_shape))
     model.add(GlobalAveragePooling2D())
 
-    optimizer_adam = Adam()
-    model.compile(optimizer=optimizer_adam, loss='sparse_categorical_crossentropy', metrics=['categorical_accuracy'])
+    model.compile(
+        optimizer=Adam(),
+        loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+        metrics=['sparse_categorical_accuracy']
+    )
     
     return model
