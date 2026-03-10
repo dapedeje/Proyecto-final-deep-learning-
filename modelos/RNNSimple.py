@@ -5,7 +5,7 @@ from keras.optimizers import Adam
 
 def ModeloSimpleCLS(input_shape, num_clases):
     """
-    Esta función permite cargar una arquitectura simple para un modelo CNN.
+    Esta función permite cargar una arquitectura simp.
 
     Args:
         input_shape (_type_): Insertar el tamaño de la entrada para el modelo
