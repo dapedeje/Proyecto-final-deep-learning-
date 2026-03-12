@@ -19,7 +19,7 @@ def ModeloComplejo(input_shape, num_clases):
     model = Sequential()
     
     model.add(layers.Conv2D(32, 3, padding='same', input_shape=input_shape))
-    #model.add(layers.BatchNormalization())
+    model.add(layers.BatchNormalization())
     model.add(layers.ReLU())
     model.add(layers.MaxPooling2D((2,2)))
 
@@ -30,7 +30,7 @@ def ModeloComplejo(input_shape, num_clases):
     
 
     model.add(layers.Conv2D(128, 3, padding='same', input_shape=input_shape))
-    #model.add(layers.BatchNormalization())
+    model.add(layers.BatchNormalization())
     model.add(layers.ReLU())
     model.add(layers.MaxPooling2D((2,2)))
     
