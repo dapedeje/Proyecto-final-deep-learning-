@@ -26,7 +26,6 @@ def ModeloComplejo(input_shape, num_clases):
     model.add(layers.Conv2D(64, 3, padding='same', input_shape=input_shape))
     model.add(layers.BatchNormalization())
     model.add(layers.ReLU())
-    model.add(layers.Dropout(0.5))
     model.add(layers.MaxPooling2D((2,2)))
     
 
@@ -37,7 +36,7 @@ def ModeloComplejo(input_shape, num_clases):
     
     model.add(layers.Flatten())
     model.add(layers.Dense(64, activation='relu'))
-    model.add(layers.Dropout(0.5))
+    model.add(layers.Dropout(0.2))
     model.add(layers.Dense(256, activation='relu'))
     model.add(layers.Dense(num_clases, activation='softmax'))
     
