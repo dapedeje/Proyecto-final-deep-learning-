@@ -35,6 +35,8 @@ def ModeloComplejo(input_shape, num_clases):
     model.add(layers.MaxPooling2D((2,2)))
     
     model.add(layers.Flatten())
+    model.add(layers.Dense(32, activation='relu'))
+    model.add(layers.Dropout(0.2))
     model.add(layers.Dense(64, activation='relu'))
     model.add(layers.Dropout(0.2))
     model.add(layers.Dense(256, activation='relu'))
