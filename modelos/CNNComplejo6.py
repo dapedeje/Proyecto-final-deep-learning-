@@ -22,6 +22,7 @@ def ModeloComplejo(input_shape, num_clases):
     model.add(layers.Conv2D(16, 3, padding='same', input_shape=input_shape))
     model.add(layers.BatchNormalization())
     model.add(layers.ReLU())
+    model.add(layers.Dropout(0.3))
     
     model.add(layers.MaxPooling2D((2,2)))
     model.add(layers.UpSampling2D((2,2)))   # restore resolution
