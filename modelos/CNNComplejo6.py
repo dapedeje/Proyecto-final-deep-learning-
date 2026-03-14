@@ -42,7 +42,8 @@ def ModeloComplejo(input_shape, num_clases):
     model.add(layers.Dense(256, activation='relu'))
     model.add(layers.Dense(num_clases, activation='softmax'))
     
-    optimizer_adam = Adam(0.000002)
+    #optimizer_adam = Adam(0.000002)
+    optimizer_adam = Adam()
     model.compile(optimizer=optimizer_adam, loss='sparse_categorical_crossentropy', metrics=['sparse_categorical_accuracy'])
     
     return model
