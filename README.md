@@ -14,12 +14,14 @@ En la siguiente tabla se resumen los enfoques y resultados reportados por alguno
 Vamos a tratar de mejorar estas metricas tan altas usando tecnicas de machine learning modernas ya que la mayoria de estos resultados tienen ya un par de años.
 
 # Nuestros modelos
+ 
 
-En esta parte documentaremos las estadisticas de nuestros modelos.
-| Autor / Referencia | Modelo utilizado                                                                                    | Estrategia                                                 | Nº parámetros                               | Accuracy reportada | Loss train | Loss valid | Loss test |
-| ------------------ | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------- | ------------------ | ---------- | ---------- | --------- |
-| Nosotros           | Regresión logística                                                                                 | Obtener vector de características con HOG                  | ~ (d × c)                                   | 69.43 %            | 0.000952   | 1.5265     | 1.5265    |
-| Nosotros           | CNN simple (va bastante mal, deberíamos revisar los datos que le llegan al modelo, no aprende nada) | Crear una CNN más simple posible                           | 26,926,645                                  | 2.6 %              | 0.016      | 3.305      | 3.393     |
-| Nosotros           | RandomForestClassifier                                                                              | Modelo simple de machine learning                          | Total leaves: 368901                        | 58.11 %            | 1.1745     | 2.5337     | 2.5451    |
-| Nosotros           | Modelo basado solo en Cov                                                                           | Usar matriz de covarianza como única representación global | 1,484 | 4.2 %              | 3.884      | 3.915      | 3.946     |
+| Autor / Referencia | Modelo utilizado                                                              | Estrategia                                                 | Nº parámetros | Accuracy reportada | Loss train | Loss valid | Loss test |
+| ------------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------- | ------------------ | ---------- | ---------- | --------- |
+| Nosotros           | Regresión logística                                                           | Obtener vector de características con HOG                  | ~ (d × c)     | 69.43 %            | 0.000952   | 1.5265     | 1.5265    |
+| Nosotros           | CNN simple (va bastante mal, deberíamos revisar los datos que le llegan al modelo, no aprende nada) | Crear una CNN más simple posible                           | 26,926,645    | 2.6 %              | 0.016      | 3.305      | 3.393     |
+| Nosotros           | RandomForestClassifier                                                        | Modelo simple de machine learning                          | Total leaves: 368901 | 58.11 %            | 1.1745     | 2.5337     | 2.5451    |
+| Nosotros           | Modelo basado solo en Cov                                                     | Usar matriz de covarianza como única representación global | 1,484         | 4.2 %              | 3.884      | 3.915      | 3.946     |
+| Nosotros           | Modelo Complejo                                                               | Modelo de red neuronal convolucional (CNN) con una arquitectura inusual que combina elementos de codificación-decodificación y capas densas para clasificación.                                                          | 2,839,573     | 48.7%              | 0.53       | 1.638      | 1.775     |
+
 
